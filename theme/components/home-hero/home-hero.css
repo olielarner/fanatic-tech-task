@@ -1,0 +1,21 @@
+
+
+    
+.swiper-pagination-bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #CFFF4D;
+    opacity: 1;
+    background: transparent;
+    border-radius: 9999px;
+    margin-bottom: 20px;
+}
+  
+.swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: #CFFF4D 0% 0% no-repeat padding-box;
+}
+
+    

@@ -1,0 +1,13 @@
+
+{
+    "name": "acf/home-hero",
+    "title": "Home Hero",
+    "description": "Custom block for Home Hero. Built by Bunker Creative",
+    "category": "formatting",
+    "icon": "grid-view",
+    "keywords": ["bunker", "nourish"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "components/home-hero/home-hero.php"
+    }
+}

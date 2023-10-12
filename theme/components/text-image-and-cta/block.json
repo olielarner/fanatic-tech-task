@@ -1,0 +1,13 @@
+
+{
+    "name": "acf/text-image-and-cta",
+    "title": "Text Image and CTA",
+    "description": "Custom block for Text Image and CTA. Built by Bunker Creative",
+    "category": "formatting",
+    "icon": "grid-view",
+    "keywords": ["bunker", "nourish"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "components/text-image-and-cta/text-image-and-cta.php"
+    }
+}

@@ -1,0 +1,23 @@
+.cta {
+	background-image: linear-gradient(#604bd8, #291b64);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 999px;
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.cta.clear-bg {
+	background-image: none;
+	border: 2px solid #cfff4d;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 999px;
+	color: white;
+	font-weight: 400;
+}
