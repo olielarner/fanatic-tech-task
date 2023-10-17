@@ -20,31 +20,42 @@ if (!empty($block['className'])) {
 }
 
 // ACF Fields
-$content         = get_field('content');
-$image           = get_field('image');
-$attribution     = get_field('attribution');
-$show_quote_mark = get_field('show_quote_mark');
+$heading         = get_field('heading');
+$subheading      = get_field('subheading');
+$main_copy       = get_field('main_copy');
+$image           = get_field('main_image');
+$ctas             = get_field('cta');
+$alignment       = get_field('alignment');
+
+
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> lg:my-11 2xl:my-24">
-    <div class="container grid gap-8 mx-auto md:grid-cols-3 xl:grid-cols-5">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> mb-[100px]">
+    <div class="container pl-[130px] flex flex-row mx-auto">
 
-        <div class="p-6 bg-white md:col-span-2 xl:col-span-3 rounded-2xl lg:p-8 2xl:py-16 2xl:px-14">
-
-            <div class="content font-light my-6 lg:my-10 2xl:text-3xl 2xl:leading-[46px]">
-                <?php echo $content; ?>
-            </div>
-
-            <?php if ($attribution) : ?>
-                <div class="attribution lg:text-base 2xl:text-xl">
-                    <?php echo $attribution; ?>
+        <div class="flex flex-col justify-center w-2/5 max-w-[397px] bg-white">
+            <?php if ($heading) : ?>
+                <h2 class="mt-0 mb-2 text-4xl leading-[52px] text-dark-purple font-heebo font-bold"><?php echo esc_html($heading); ?></h2>
+            <?php endif; ?>
+            <?php if ($subheading) : ?>
+                <p class="text-[22px] font-heebo font-medium text-purple leading-8 m-0 pb-4"><?php echo esc_html($subheading); ?></p>
+            <?php endif; ?>
+            <?php if ($main_copy) : ?>
+                <p class="mt-0 font-light leading-6 font-base text-mid-grey mb-9"><?php echo esc_html($main_copy); ?></p>
+            <?php endif; ?>
+            <?php if ($ctas) : ?>
+                <div class="flex">
+                <?php foreach($ctas as $cta) : ?>
+                    <a href="<?php echo esc_url($cta['link']['url']); ?>" class="cta mr-4 font-heebo <?php if($cta['colour'] === 'transparent') echo 'clear-bg-purp-border'; ?>"><?php echo esc_html($cta['link']['title']); ?></a>
+                <?php endforeach; ?>   
                 </div>
             <?php endif; ?>
+                
         </div>
 
         <?php if ($image) : ?>
-            <div class="md:col-span-1 xl:col-span-2">
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="object-cover w-full h-full rounded-2xl">
+            <div class="w-3/5 max-w-[685px] ml-[100px]">
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="object-cover w-full h-full my-0 rounded-2xl">
             </div>
         <?php endif; ?>
 

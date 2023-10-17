@@ -26,7 +26,7 @@ $slides                  = get_field('slides');
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> ">
    
-        <div >
+        <div class="w-full pb-[100px]">
             <?php if ($slides) : ?>
                 <div class="h-screen swiper max-h-[652px]">
                 <div class="absolute z-10 swiper-pagination right-24 top-1/3"></div>
@@ -42,12 +42,12 @@ $slides                  = get_field('slides');
                                 <div class="swiper-slide">
                                     <div class="flex h-full">
                                         
-                                        <div class="flex flex-col justify-center w-1/2 align-middle bg-gradient-to-br from-purple to-dark-purple">
-                                            <div class="max-w-md mx-auto font-heebo">
-                                            <p class="text-lime-green text-[22px] leading-7 font-medium m-0"><?php echo esc_html($subheading); ?></p>
-                                            <h2 class=" my-4 text-[50px] text-white leading-none"><?php echo esc_html($heading); ?></h2>
-                                            <p class="mb-0 text-[22px] font-medium text-white leading-7 mt-2 pb-7"><?php echo wp_kses_post($additional_copy); ?></p>
-                                            <a href="<?php echo esc_url($cta['url']); ?>" class="text-base font-medium cta clear-bg "><?php echo esc_html($cta['title']); ?></a>
+                                        <div class="flex flex-col pr-[123px] justify-center w-1/2 items-end bg-gradient-to-br from-purple to-dark-purple">
+                                            <div class="flex flex-col max-w-md font-heebo">
+                                                <p class="text-lime-green text-[22px] leading-7 font-medium m-0"><?php echo esc_html($subheading); ?></p>
+                                                <h2 class=" my-4 text-[50px] text-white leading-none"><?php echo esc_html($heading); ?></h2>
+                                                <p class="mb-0 text-[22px] font-medium text-white leading-7 mt-2 pb-7"><?php echo wp_kses_post($additional_copy); ?></p>
+                                                <a href="<?php echo esc_url($cta['url']); ?>" class="self-start text-base font-medium cta clear-bg "><?php echo esc_html($cta['title']); ?></a>
                                             </div>
                                         </div>
                                         <div class="w-1/2 h-full">

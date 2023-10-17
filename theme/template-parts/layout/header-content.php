@@ -17,7 +17,7 @@ $instagram_icon = get_field('instagram_icon_header', 'option');
 
 ?>
 
-<header class="sticky top-0 header drop-shadow-[0_3px_20px_rgba(0,0,0,0.29)]" role="banner">
+<header class="sticky top-0 header drop-shadow-[0_3px_20px_rgba(0,0,0,0.29)] z-50 bg-white" role="banner">
             <div class="container mx-auto">
                 <div class="flex flex-row items-center justify-between py-6 row px-14">
                     <div>
