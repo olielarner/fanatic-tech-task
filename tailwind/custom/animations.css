@@ -1,0 +1,101 @@
+.anim-text,.anim-text-up {
+    overflow: hidden;
+  }
+  
+  .anim-text span,.anim-text-up span {
+    position: relative;
+    display: inline-block;
+    transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .anim-text.anim-trigger span,.anim-trigger.anim-text-up span {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  
+  .anim-text-up span {
+    transform: matrix(1, 0, 0, 1, 0, 80);
+  }
+  
+  .anim-fade {
+    position: relative;
+    opacity: 0 !important;
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .anim-fade.anim-trigger {
+    opacity: 1 !important;
+  }
+  
+  .anim-fade__up:not(.transform) {
+    bottom: -200px;
+  }
+  
+  .anim-fade__up:not(.transform).anim-trigger {
+    bottom: 0;
+  }
+  
+  .anim-fade__left:not(.transform) {
+    left: 30px;
+  }
+  
+  .anim-fade__left:not(.transform).anim-trigger {
+    left: 0;
+  }
+  
+  .anim-fade__right:not(.transform) {
+    left: -60px;
+  }
+  
+  .anim-fade__right:not(.transform).anim-trigger {
+    left: 0;
+  }
+  
+  .anim-fade__up.transform {
+    transform: translateY(200px);
+  }
+  
+  .anim-fade__up.transform.anim-trigger {
+    transform: translateY(0);
+  }
+  
+  .anim-fade__left.transform {
+    transform: translateX(30px);
+  }
+  
+  .anim-fade__left.transform.anim-trigger {
+    transform: translateX(0);
+  }
+  
+  .anim-fade__right.transform {
+    transform: translateX(-60px);
+  }
+  
+  .anim-fade__right.transform.anim-trigger {
+    transform: translateX(0);
+  }
+  
+  .anim-letterbox {
+    transition: width 1.4s cubic-bezier(0.43, 0.26, 0.13, 1.01);
+    position: absolute;
+    top: 0;
+    width: 0 !important;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .anim-letterbox img {
+    max-width: 100vw;
+  }
+  
+  .anim-letterbox.anim-trigger {
+    width: 100% !important;
+  }
+  
+  .anim-letterbox__right {
+    right: 0;
+  }
+  
+  .anim-letterbox__right img {
+    float: right;
+  }
+  

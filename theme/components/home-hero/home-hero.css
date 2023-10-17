@@ -18,4 +18,9 @@
     background: #CFFF4D 0% 0% no-repeat padding-box;
 }
 
-    
+@media only screen and (max-width: 600px) {
+    .swiper-pagination-bullet {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}    

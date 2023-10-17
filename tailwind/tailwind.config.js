@@ -21,8 +21,12 @@ module.exports = {
 			colors: {
 				purple: '#604BD8',
 				'dark-purple': '#291B64',
+				'very-dark-purple': '#1D153C',
 				'lime-green': '#CFFF4D',
 				'mid-grey': '#626262',
+			},
+			dropShadow: {
+				card: '0px 3px 15px rgba(41, 27, 100, 0.2)',
 			},
 		},
 	},

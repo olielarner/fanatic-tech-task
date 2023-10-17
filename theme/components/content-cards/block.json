@@ -1,0 +1,13 @@
+
+{
+    "name": "acf/content-cards",
+    "title": "Content Cards",
+    "description": "Custom block for Content Cards. Built by Olie Larner",
+    "category": "formatting",
+    "icon": "grid-view",
+    "keywords": ["fanatic", "tech-test"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "components/content-cards/content-cards.php"
+    }
+}

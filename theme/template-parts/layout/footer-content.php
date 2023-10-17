@@ -18,18 +18,30 @@ $instagram_icon = get_field('instagram_icon', 'option');
 
 ?>
 
-<footer id="colophon">
+<footer id="colophon" class="pt-16 pb-20 bg-very-dark-purple font-heebo">
+<div class="container mx-auto">
 
+		<div>
+		<h3 class=" text-purple text-[35px] leading-[30px] font-extrabold mb-6">
+			Source<br />
+			Recruitment<span class=" text-lime-green">.</span>
+		</h3>
 		<nav aria-label="<?php esc_attr_e( 'Footer Menu', 'fanatic' ); ?>">
-		<?php
-			wp_nav_menu(array(
-				'theme_location' => 'main_menu',
-				'menu' => 'main-menu',
-				'container' => false,
-				'menu_class' => 'flex flex-col h-full justify-evenly',
-				'menu_id' => 'main-menu',
-			));
-		?>
+				<?php
+					wp_nav_menu(array(
+						'theme_location' => 'main_menu',
+						'menu' => 'main-menu',
+						'container' => false,
+						'menu_class' => 'flex flex-col h-full justify-evenly ',
+						'add_li_class'  => 'font-heebo leading-6 text-white hover:text-purple mb-4',
+						'menu_id' => 'main-menu',
+					));
+				?>
 		</nav>
+		</div>
+		
+
+</div>
+
 
 </footer><!-- #colophon -->

@@ -17,11 +17,11 @@ $instagram_icon = get_field('instagram_icon_header', 'option');
 
 ?>
 
-<header class="sticky top-0 header drop-shadow-[0_3px_20px_rgba(0,0,0,0.29)] z-50 bg-white" role="banner">
+<header class="sticky top-0 header drop-shadow-[0_3px_20px_rgba(0,0,0,0.29)] z-50 bg-white hidden" role="banner">
             <div class="container mx-auto">
-                <div class="flex flex-row items-center justify-between py-6 row px-14">
+                <div class="flex flex-row items-center justify-between py-6 pl-0 row pr-14">
                     <div>
-                        <a href="<?php echo get_bloginfo( 'url' ); ?>" class="text-xl font-extrabold leading-4 header__logo text-purple font-heebo">
+                        <a href="<?php echo get_bloginfo( 'url' ); ?>" class="text-xl font-extrabold leading-4 header__logo text-purple font-heebo ">
 						Source <br />Recruitment.
                         </a>
                     </div>
@@ -34,7 +34,8 @@ $instagram_icon = get_field('instagram_icon_header', 'option');
 										'theme_location' => 'main_menu',
 										'menu' => 'main-menu',
 										'container' => false,
-										'menu_class' => 'flex flex-row h-full flex-1 justify-between items-center text-dark-purple text-base leading-6 font-medium',
+										'menu_class' => 'flex flex-row h-full flex-1 justify-between items-center  text-base leading-6 font-medium',
+                                        'add_li_class'  => 'text-dark-purple hover:text-purple relative',
 										'menu_id' => 'main-menu',
 									));
 									?>

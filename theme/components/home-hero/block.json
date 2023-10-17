@@ -2,10 +2,10 @@
 {
     "name": "acf/home-hero",
     "title": "Home Hero",
-    "description": "Custom block for Home Hero. Built by Bunker Creative",
+    "description": "Custom block for Home Hero. Built by Olie Larner",
     "category": "formatting",
     "icon": "grid-view",
-    "keywords": ["bunker", "nourish"],
+    "keywords": ["fanatic", "tech-test"],
     "acf": {
         "mode": "edit",
         "renderTemplate": "components/home-hero/home-hero.php"

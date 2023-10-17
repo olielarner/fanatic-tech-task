@@ -30,10 +30,10 @@ $alignment       = get_field('alignment');
 
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> mb-[100px]">
-    <div class="container pl-[130px] flex flex-row mx-auto">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> mb-14 lg:mb-[100px] ">
+    <div class="container flex flex-col justify-center mx-auto pl-[5%] pr-[5%] <?php echo $alignment == 'image-left' ? 'lg:flex-row-reverse ' : 'lg:flex-row'; ?>">
 
-        <div class="flex flex-col justify-center w-2/5 max-w-[397px] bg-white">
+        <div class="flex flex-col justify-center w-full lg:w-2/5 max-w-[397px] bg-white anim anim-fade anim-fade__up">
             <?php if ($heading) : ?>
                 <h2 class="mt-0 mb-2 text-4xl leading-[52px] text-dark-purple font-heebo font-bold"><?php echo esc_html($heading); ?></h2>
             <?php endif; ?>
@@ -50,11 +50,10 @@ $alignment       = get_field('alignment');
                 <?php endforeach; ?>   
                 </div>
             <?php endif; ?>
-                
         </div>
 
         <?php if ($image) : ?>
-            <div class="w-3/5 max-w-[685px] ml-[100px]">
+            <div class="w-full lg:w-3/5 mt-8 lg:mt-0 max-w-[685px] anim anim-fade anim-fade__up delay-300 <?php echo $alignment == 'image-left' ? 'lg:mr-[100px]' : 'lg:ml-[100px]'; ?>">
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="object-cover w-full h-full my-0 rounded-2xl">
             </div>
         <?php endif; ?>

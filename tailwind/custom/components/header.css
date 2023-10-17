@@ -1,3 +1,22 @@
 #main-menu li .sub-menu {
 	display: none;
+	position: absolute;
+	overflow: hidden;
+	top: 60px;
+	left: -50%;
+}
+
+#main-menu li .sub-menu li {
+	height: 60px;
+	width: 211px;
+	display: flex;
+	justify-content: center;
+	font: normal normal medium 16px/24px;
+	align-items: center;
+	color: #ffffff;
+	background-color: #604bd8;
+}
+
+#main-menu li .sub-menu li:nth-child(2) {
+	background-color: #291b64;
 }

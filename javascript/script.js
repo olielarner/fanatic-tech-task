@@ -11,9 +11,15 @@
 
 import $ from 'jquery';
 import HomeHero from '../theme/components/home-hero/home-hero';
+import ContentCards from '../theme/components/content-cards/content-cards';
+import './animation/animations';
+import './components/header';
 
 $(function () {
 	$('section.home-hero').each(function () {
 		new HomeHero($(this));
+	});
+	$('section.content-cards').each(function () {
+		new ContentCards($(this));
 	});
 });

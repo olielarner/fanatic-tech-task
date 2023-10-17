@@ -1,0 +1,8 @@
+
+    
+section.content-cards{
+    /* Component styles here */
+    background: rgb(41,27,100);
+    background: linear-gradient(0deg, rgba(41,27,100,1) 60%, rgba(255,255,255,1) 60%);
+}
+    

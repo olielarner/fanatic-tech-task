@@ -253,3 +253,14 @@ function php_require_all_files_in_directory($dir) {
 php_require_all_files_in_directory(__DIR__ . '/inc/acf-blocks/**/*.php');
 php_require_all_files_in_directory(__DIR__ . '/inc/acf-core-blocks/*.php');
 php_require_all_files_in_directory(__DIR__ . '/components/**/register.php');
+
+
+// Add classes to li in menu
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
