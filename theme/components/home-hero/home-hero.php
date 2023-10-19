@@ -3,7 +3,7 @@
 /**
  * Template for the Home Hero block.
  *
- * @package bunker
+ * @package fanatic
  * @since 1.0.0
  */
 
@@ -51,7 +51,7 @@ $slides                  = get_field('slides');
                                     
                                     </div>
 
-                                    <div class="container pl-[5%] pr-[5%] relative flex h-full mx-auto bg-gradient-to-br from-purple to-dark-purple lg:from-transparent lg:to-transparent">
+                                    <div class="lg:container pl-[5%] pr-[5%] relative flex h-full lg:mx-auto bg-gradient-to-br from-purple to-dark-purple lg:from-transparent lg:to-transparent">
                                         
                                         <div class="flex flex-col justify-center w-full lg:w-1/2">
                                             <div class="flex flex-col max-w-md font-heebo anim anim-fade">

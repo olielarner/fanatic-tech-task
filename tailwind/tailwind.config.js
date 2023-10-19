@@ -12,6 +12,14 @@ module.exports = {
 		'./theme/**/*.php',
 		'./theme/theme.json',
 	],
+	safelist: [
+		'-rotate-45 ',
+		'top-1',
+		'bottom-1',
+		'rotate-45',
+		'opacity-100',
+		'opacity-0',
+	],
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {

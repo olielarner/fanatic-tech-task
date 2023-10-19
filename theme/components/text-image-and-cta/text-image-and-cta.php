@@ -3,7 +3,7 @@
 /**
  * Template for the Text Card with Image Aside block.
  *
- * @package bunker
+ * @package fanatic
  * @since 1.0.0
  */
 
